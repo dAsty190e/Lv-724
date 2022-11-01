@@ -1,0 +1,17 @@
+﻿Create Console Application project in VS.
+
+In method Main() write code for solving next tasks:
+
++ 1. Define integer variables a and b.
+Read values a and b from the console and calculate: a+b, a-b, a*b, a/b. 
+Output results on the console.
+
++ 2. Output question “How are you?“. 
+Define string variable answer. 
+Read value answer and output on the console: “You are (answer)". 
+
++ 3. Read 3 variables of char type. 
+Write message: “You enter (first char), (second char), (3 char)”
+
++ 4. Enter 2 integer numbers. 
+Check if they are both positive – use bool expression
