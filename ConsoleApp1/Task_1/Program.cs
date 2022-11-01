@@ -10,7 +10,7 @@
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Put your number b: ");
             int b = int.Parse(Console.ReadLine());
-            
+
 
             Console.WriteLine($"Your addition number is: {a} + {b} = " + (a + b));
             Console.WriteLine($"Your subtraction number is: {a} - {b} = " + (a - b));
@@ -18,7 +18,7 @@
             Console.WriteLine($"Your divide number is: {a} / {b} = " + (a / b));
 
 
-            // Output question “How are you?“
+            // Output question “How are you?“                
 
             Console.WriteLine("\nWhat is your name?");
             var userInput = Console.ReadLine();
@@ -92,12 +92,12 @@
             {
                 Console.WriteLine("They equal to each other");
             }
-            
+
             if ((c < 0) && (d > 0))
             {
                 Console.WriteLine("A is negative and B is positive");
             }
-            
+
             if ((c > 0) && (d < 0))
             {
                 Console.WriteLine("A is positive and B is negative");
