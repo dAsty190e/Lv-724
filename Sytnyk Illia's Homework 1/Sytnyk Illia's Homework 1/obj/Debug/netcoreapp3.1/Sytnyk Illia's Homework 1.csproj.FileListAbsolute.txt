@@ -1,0 +1,14 @@
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\bin\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.exe
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\bin\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.deps.json
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\bin\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.runtimeconfig.json
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\bin\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.runtimeconfig.dev.json
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\bin\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.dll
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\bin\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.pdb
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.csproj.AssemblyReference.cache
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.AssemblyInfoInputs.cache
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.AssemblyInfo.cs
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.csproj.CoreCompileInputs.cache
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.dll
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.pdb
+D:\KPI\Codes\Softserves's homeworks\Sytnyk Illia's Homework 1\Sytnyk Illia's Homework 1\obj\Debug\netcoreapp3.1\Sytnyk Illia's Homework 1.genruntimeconfig.cache
