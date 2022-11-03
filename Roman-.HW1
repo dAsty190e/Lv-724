@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Homework_01_tast_01
+{
+    class Program1
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Task 1");
+            Console.Write("Enter a= ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int  AreaSquare = a*a;
+            int NumberSideSqure = 4;
+            int Perimetr = a * NumberSideSqure;
+            Console.WriteLine("Square of figures = {0} = {1}",a,AreaSquare);
+            Console.WriteLine("Perimtr of figures = {0} = {1}", a, Perimetr);
+            Console.ReadKey();
+
+            Console.WriteLine("Task 2");
+            Console.WriteLine("What is your name? ");
+            string name = Console.ReadLine();
+            Console.WriteLine("How old are you", name + "? ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Name: {0} Age: {1}", name, age);
+            Console.ReadKey();
+
+            Console.WriteLine("Task 3");
+            Console.Write("Enter r= ");
+            int r = Convert.ToInt32(Console.ReadLine());
+            double leight = 2*3.14 * r;
+            double Squeare = 3.14 * r * r;
+            double Obsag = 4 / 3 * r * r * r * 3.14;
+            Console.WriteLine("Leight (l=2*pi*r) = {0:F3} ",leight);
+            Console.WriteLine("Squeare (S=pi*r*r) = {0:F3} ", Squeare);
+            Console.WriteLine("Obsag (4/3*pi*r*r*r) = {0:F3} ", Obsag);
+            Console.ReadKey();
+        }
+    }
+   
+}
