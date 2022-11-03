@@ -1,0 +1,13 @@
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\bin\Debug\netcoreapp3.1\SeletskiyHW1.exe
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\bin\Debug\netcoreapp3.1\SeletskiyHW1.deps.json
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\bin\Debug\netcoreapp3.1\SeletskiyHW1.runtimeconfig.json
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\bin\Debug\netcoreapp3.1\SeletskiyHW1.runtimeconfig.dev.json
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\bin\Debug\netcoreapp3.1\SeletskiyHW1.dll
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\bin\Debug\netcoreapp3.1\SeletskiyHW1.pdb
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.csprojAssemblyReference.cache
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.AssemblyInfoInputs.cache
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.AssemblyInfo.cs
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.csproj.CoreCompileInputs.cache
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.dll
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.pdb
+C:\Users\V\Desktop\С#\1\Seletskiy_Homeworks\SeletskiyHW1\SeletskiyHW1\obj\Debug\netcoreapp3.1\SeletskiyHW1.genruntimeconfig.cache
