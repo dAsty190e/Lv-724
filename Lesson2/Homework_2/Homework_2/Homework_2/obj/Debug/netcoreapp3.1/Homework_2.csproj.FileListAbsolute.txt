@@ -1,0 +1,13 @@
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/bin/Debug/netcoreapp3.1/Homework_2.deps.json
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/bin/Debug/netcoreapp3.1/Homework_2.runtimeconfig.json
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/bin/Debug/netcoreapp3.1/Homework_2.runtimeconfig.dev.json
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/bin/Debug/netcoreapp3.1/Homework_2.dll
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/bin/Debug/netcoreapp3.1/Homework_2.pdb
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.csproj.AssemblyReference.cache
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.AssemblyInfoInputs.cache
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.AssemblyInfo.cs
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.dll
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.pdb
+/Users/mac/Desktop/C# Marathon SoftServe/Lesson2/Homework_2/Homework_2/Homework_2/obj/Debug/netcoreapp3.1/Homework_2.genruntimeconfig.cache
