@@ -1,0 +1,15 @@
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\bin\Debug\net6.0\Ostrynskyi_HW_2_new.exe
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\bin\Debug\net6.0\Ostrynskyi_HW_2_new.deps.json
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\bin\Debug\net6.0\Ostrynskyi_HW_2_new.runtimeconfig.json
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\bin\Debug\net6.0\Ostrynskyi_HW_2_new.dll
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\bin\Debug\net6.0\Ostrynskyi_HW_2_new.pdb
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.dll
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\refint\Ostrynskyi_HW_2_new.dll
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.pdb
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\Ostrynskyi_HW_2_new.genruntimeconfig.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_2_new\Ostrynskyi_HW_2_new\obj\Debug\net6.0\ref\Ostrynskyi_HW_2_new.dll
