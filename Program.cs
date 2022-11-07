@@ -1,70 +1,72 @@
 ﻿using System;
-
-namespace Homework2.Dima
+namespace HW2_Cherniak
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //task 1
-            Console.WriteLine("Task 1");
-            Console.WriteLine("Enter 3 numbers");
-            string first = Console.ReadLine();
-            float number1 = float.Parse(first);
-            string second = Console.ReadLine();
-            float number2 = float.Parse(second);
-            string third = Console.ReadLine();
-            float number3 = float.Parse(third);
-            if (number1 >= -5 && number1 <= 5)
-                Console.WriteLine("yes");
-            else
-                Console.WriteLine("no");
-            if (number2 >= -5 && number1 <= 5)
-                Console.WriteLine("yes");
-            else
-                Console.WriteLine("no");
-            if (number3 >= -5 && number1 <= 5)
-                Console.WriteLine("yes");
-            else
-                Console.WriteLine("no");
-            Console.ReadKey();
+	internal class Program
+	{
+		static void Main(string[] args)
+		{
+			//Task 1 
+			Console.WriteLine("Please, input first number in the range from -5 to 5");
+			var firstNumber = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Please, input second number in the range from -5 to 5");
+			var secondNumber = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Please, input third number in the range from -5 to 5");
+			var thirdNumber = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine((firstNumber <= 5) && (firstNumber >= -5) ? "Your firstNumber in the range from -5 to 5" : "Error");
+			Console.ReadKey();
+			Console.WriteLine((secondNumber <= 5) && (secondNumber >= -5) ?
+				"Your secondNumber in the range from -5 to 5" : "Error");
+			Console.ReadKey();
+			Console.WriteLine((thirdNumber <= 5) && (thirdNumber >= -5) ? "Your thirdNumber in the range from -5 to 5" : "Error");
+			Console.ReadKey();
+			//Task 2
+			Console.WriteLine("Please, input three numbers");
+			var first = Convert.ToInt32(Console.ReadLine());
+			var second = Convert.ToInt32(Console.ReadLine());
+			var third = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine((first > second) && (first > third) ? "Max value is first" : 
+							  (second > first) && (second > third) ? "Max value is second" : "Max value is third");
+			Console.WriteLine((first < second) && (first < third) ? "Min value is first" :
+							  (second < first) && (second < third) ? "Min value is second" : "Min value is third");
+			Console.ReadKey();
+			Console.WriteLine("Please, input number of error");
+			var result = Convert.ToInt32(Console.ReadLine());
+			NumberOfError(result, HttpError.NotFound);
+		}
+		//Task 3
 
-            //task 2
-            Console.WriteLine("Task 2");
-            Console.WriteLine("Enter 3 numbers");
-            string four = Console.ReadLine();
-            int number4 = Convert.ToInt32(four);
-            string five = Console.ReadLine();
-            int number5 = Convert.ToInt32(five);
-            string six = Console.ReadLine();
-            int number6 = Convert.ToInt32(six);
-            if (number4 > number5 && number4 > number5)
-                Console.WriteLine("number one is the biggest");
-            else if (number5 > number4 && number5 > number6)
-                Console.WriteLine("number two is the biggest ");
-            else
-                Console.WriteLine("number three is the biggest");
-
-            //task 4
-            Console.WriteLine("Task 4");
-            MyDog mydog;
-            mydog.name = "Rex";
-            mydog.mark = "dachshund";
-            mydog.age = 2;
-
-            mydog.info();
-
-        }
-    }
-    struct MyDog
-    {
-        public string name;
-        public string mark;
-        public int age;
-
-        public void info()
-        {
-            Console.WriteLine($"my dog name is {name}, mark is {mark} it is {age} years old");
-        }
-    }
+		enum HttpError
+		{
+			BadRequest = 400,
+			Unauthorized = 401,
+			Forbidden = 403,
+			NotFound = 404
+		}
+		static void NumberOfError(int result, HttpError error)
+		{
+			switch (result)
+			{
+				case 400:
+					{
+						Console.WriteLine(HttpError.BadRequest);
+						break;
+					}
+				case 401:
+					{
+						Console.WriteLine(HttpError.Unauthorized);
+						break;
+					}
+				case 403:
+					{
+						Console.WriteLine(HttpError.Forbidden);
+						break;
+					}
+				case 404:
+					{
+						Console.WriteLine(HttpError.NotFound);
+						break;
+					}
+			}
+		}
+	}
 }
