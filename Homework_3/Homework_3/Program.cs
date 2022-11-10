@@ -8,46 +8,46 @@ namespace Homework_3
         static void Main(string[] args)
         {
             // #1
-            //Console.WriteLine("Give me some text!");
-            //var userInput = Console.ReadLine()!;
+            Console.WriteLine("Give me some text!");
+            var userInput = Console.ReadLine()!;
 
-            //int a = 0;
-            //int i = 0;
-            //int o = 0;
-            //int e = 0;
-            //foreach (var item in userInput)
-            //{
-            //    if (item == 'a')
-            //    {
-            //        a++;
-            //    }
-            //    if (item == 'i')
-            //    {
-            //        i++;
-            //    }
-            //    if (item == 'o')
-            //    {
-            //        o++;
-            //    }
-            //    if (item == 'e')
-            //    {
-            //        e++;
-            //    }
-            //}
-            //Console.WriteLine($"{a}, {i}, {o}, {e}");
+            int a = 0;
+            int i = 0;
+            int o = 0;
+            int e = 0;
+            foreach (var item in userInput)
+            {
+                if (item == 'a')
+                {
+                    a++;
+                }
+                if (item == 'i')
+                {
+                    i++;
+                }
+                if (item == 'o')
+                {
+                    o++;
+                }
+                if (item == 'e')
+                {
+                    e++;
+                }
+            }
+            Console.WriteLine($"{a}, {i}, {o}, {e}");
 
             // #2
 
-            // month
-            //Console.WriteLine("\nGive me the month : ");
-            //var userMonth = Console.ReadLine()!;
-            //var month = int.Parse(userMonth);
-            //// year
-            //Console.WriteLine("\nGive me a year : ");
-            //var userYear = Console.ReadLine()!;
-            //var year = int.Parse(userYear);
+            //month
+            Console.WriteLine("\nGive me the month : ");
+            var userMonth = Console.ReadLine()!;
+            var month = int.Parse(userMonth);
+            // year
+            Console.WriteLine("\nGive me a year : ");
+            var userYear = Console.ReadLine()!;
+            var year = int.Parse(userYear);
 
-            //Console.WriteLine("Days in the month:" + DateTime.DaysInMonth(year, month));
+            Console.WriteLine("Days in the month:" + DateTime.DaysInMonth(year, month));
 
             // #3
 
