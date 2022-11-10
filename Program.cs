@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Homework3.Dima
 {
     class Program
@@ -59,11 +58,7 @@ namespace Homework3.Dima
             Console.WriteLine($"sum is {summ}");
             // 3 завдання шось не виходить в мене зробити оту другу частину, де множення останніх п'яти(
 
-
-
-
-
-
         }
     }
+
 }
