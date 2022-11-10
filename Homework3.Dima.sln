@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework3.Dima", "Homework3.Dima.csproj", "{A34E726D-981C-4834-9A97-A13DEB25223A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A34E726D-981C-4834-9A97-A13DEB25223A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34E726D-981C-4834-9A97-A13DEB25223A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34E726D-981C-4834-9A97-A13DEB25223A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34E726D-981C-4834-9A97-A13DEB25223A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38062EB1-717F-41A1-BE2A-83270A9D9EA6}
+	EndGlobalSection
+EndGlobal

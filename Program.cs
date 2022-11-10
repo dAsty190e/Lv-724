@@ -1,38 +1,69 @@
 ﻿using System;
 
-namespace Homework_1
+namespace Homework3.Dima
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please, enter the length of a squere side: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            
-            int squere_perimeter = a * 4;
-            int squere_area = a * a;
 
-            Console.WriteLine($"Perimeter of the squere is: {squere_perimeter}");
-            Console.WriteLine("The squere area is: {0}", squere_area);
+            //task 1
+            Console.WriteLine("task 1");
+            Console.WriteLine("Enter the text");
+            string str = Console.ReadLine();
+            int sum = 0;
+            foreach (char p in str)
+                if (p == 'a' || p == 'o')
+                {
+                    sum++;
+                }
+            foreach (char p in str)
+                if (p == 'i' || p == 'e')
+                {
+                    sum++;
+                }
+            Console.WriteLine($"sum is {sum}");
 
-            Console.WriteLine("What is your name? ");
-            string name = Console.ReadLine();
+            //task2
+            Console.WriteLine("task 2");
+            Console.WriteLine("Enter the number of month");
+            int month = Convert.ToInt32(Console.ReadLine());
+            int[] months = new int[7] { 1, 3, 5, 7, 8, 10, 12 };
+            int[] months2 = new int[4] { 4, 6, 9, 11 };
+            foreach (int p in months)
+                if (month == p)
+                {
+                    Console.WriteLine("This month has 31 days");
+                }
+            foreach (int p in months2)
+                if (month == p)
+                {
+                    Console.WriteLine("This month has 30 days");
+                }
+            if (month == 2)
+            {
+                Console.WriteLine("This month has 28 or 29 days");
+            }
 
-            Console.WriteLine("How old are you, {0}", name);
-            int age = Convert.ToInt32(Console.ReadLine());
+            //task 3
+            Console.WriteLine("Task 3");
+            int[] nums = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int k = 0;
+            int summ = 0;
+            int multiplication = 0;
+            foreach (int p in nums)
+                if (p >= 0 && k < 5)
+                {
+                    summ += p; k++;
+                }
+            Console.WriteLine($"sum is {summ}");
+            // 3 завдання шось не виходить в мене зробити оту другу частину, де множення останніх п'яти(
 
-            Console.WriteLine($"{name}, Your age is {age}");
 
-            Console.Write("Enter a radius: ");
-            double radius = Convert.ToDouble(Console.ReadLine());
 
-            const double PI = 3.14;
-            double length = PI * 2 * radius;
-            double area = PI * radius * radius;
-            double volume = 4 / 3 * PI * radius * radius * radius;
 
-            Console.WriteLine($"Circle parameters are:\n\tVolume: {volume}\n\tArea: {area}\n\tLength: {length}");
+
+
         }
     }
 }
-
