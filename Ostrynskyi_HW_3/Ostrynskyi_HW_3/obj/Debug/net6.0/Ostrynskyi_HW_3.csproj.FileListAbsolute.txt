@@ -1,0 +1,15 @@
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\bin\Debug\net6.0\Ostrynskyi_HW_3.exe
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\bin\Debug\net6.0\Ostrynskyi_HW_3.deps.json
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\bin\Debug\net6.0\Ostrynskyi_HW_3.runtimeconfig.json
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\bin\Debug\net6.0\Ostrynskyi_HW_3.dll
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\bin\Debug\net6.0\Ostrynskyi_HW_3.pdb
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.dll
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\refint\Ostrynskyi_HW_3.dll
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.pdb
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\Ostrynskyi_HW_3.genruntimeconfig.cache
+C:\Users\Dell\Desktop\Ostrynskyi_HW_3\Ostrynskyi_HW_3\obj\Debug\net6.0\ref\Ostrynskyi_HW_3.dll
