@@ -1,0 +1,12 @@
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\bin\Debug\net6.0\HM_4_Person.deps.json
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\bin\Debug\net6.0\HM_4_Person.dll
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\bin\Debug\net6.0\HM_4_Person.pdb
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.csproj.AssemblyReference.cache
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.AssemblyInfoInputs.cache
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.AssemblyInfo.cs
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.csproj.CoreCompileInputs.cache
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.dll
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\refint\HM_4_Person.dll
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\HM_4_Person.pdb
+C:\Users\mlesy\temp\Lv-724\Lesia_Maiatsaka\Homework_4\HM_4_Person\obj\Debug\net6.0\ref\HM_4_Person.dll
