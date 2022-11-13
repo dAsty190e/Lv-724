@@ -6,5 +6,17 @@
         private string _name;
         private string _color;
         private decimal _price;
+
+        public Car()
+        {
+
+        }
+
+        public Car(string name, string color, decimal price)
+        {
+            _name = name;
+            _color = color;
+            _price = price;
+        }
     }
 }
