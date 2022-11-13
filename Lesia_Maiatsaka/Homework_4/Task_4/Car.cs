@@ -5,14 +5,14 @@
         public const string CompanyName = "Subaru";
         private string _name;
         private string _color;
-        private decimal _price;
+        private double _price;
 
         public Car()
         {
 
         }
 
-        public Car(string name, string color, decimal price)
+        public Car(string name, string color, double price)
         {
             _name = name;
             _color = color;
@@ -27,6 +27,6 @@
 
         public string Print() => $"This is a {_name}, its color is {_color} and its price is {_price}";
 
-
+        public double ChangePrice(double percentage) => _price * percentage;
     }
 }
