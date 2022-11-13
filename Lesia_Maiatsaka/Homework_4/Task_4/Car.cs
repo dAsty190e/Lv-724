@@ -24,5 +24,9 @@
             get => _color;
             set => _color = value;
         }
+
+        public string Print() => $"This is a {_name}, its color is {_color} and its price is {_price}";
+
+
     }
 }
