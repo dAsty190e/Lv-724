@@ -27,6 +27,6 @@
 
         public string Print() => $"This is a {_name}, its color is {_color} and its price is {_price}";
 
-        public double ChangePrice(double percentage) => _price * percentage;
+        public double ChangePrice(double percentage) => _price *= percentage;
     }
 }
