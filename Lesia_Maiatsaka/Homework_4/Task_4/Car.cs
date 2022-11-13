@@ -18,5 +18,11 @@
             _color = color;
             _price = price;
         }
+
+        public string Color 
+        {
+            get => _color;
+            set => _color = value;
+        }
     }
 }
