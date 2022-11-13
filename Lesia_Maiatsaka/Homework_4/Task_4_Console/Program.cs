@@ -9,6 +9,8 @@ namespace Task_4_Console
             var car1 = new Car("Forester", "Blue", 120_000);
             var car2 = new Car("Impreza", "White", 90_000);
             var car3 = new Car("Legacy", "Red", 110_000);
+            var car4 = new Car("Legacy", "Red", 110_000);
+            Console.WriteLine(car3 == car4);
 
             car1.ChangePrice(1.1);
             car2.ChangePrice(1.25);

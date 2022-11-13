@@ -34,6 +34,19 @@ namespace Task_4_Tests
             Assert.AreNotEqual("White", car2?.Color);
         }
 
+        [TestMethod]
+        public void EequalityOperator()
+        {
+            // assembler
+            var car1 = new Car("Legacy", "Red", 110_000);
+            var car2 = new Car("Legacy", "Red", 110_000);
+            // act
+            // assert
+            Assert.IsTrue(car1 == car2);
+            car2.ChangePrice(0.0000001);
+            Assert.IsFalse(car1 == car2);
+        }
+
     }
 
 }
