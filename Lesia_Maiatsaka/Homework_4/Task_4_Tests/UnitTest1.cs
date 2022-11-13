@@ -21,5 +21,19 @@ namespace Task_4_Tests
             Assert.AreEqual(112_500, car2Price);
             Assert.AreEqual(99_000, car3Price);
         }
+
+        [TestMethod]
+        public void ChangeColor()
+        {
+            // assembler
+            var car2 = new Car("Impreza", "White", 90_000);
+            // act
+            car2.Color = "Blue";
+            // assert
+            Assert.AreEqual("Blue", car2.Color);
+            Assert.AreNotEqual("White", car2?.Color);
+        }
+
     }
+
 }

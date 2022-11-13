@@ -14,9 +14,12 @@ namespace Task_4_Console
             car2.ChangePrice(1.25);
             car3.ChangePrice(0.9);
 
+            car2.Color = "Black";
+
             Console.WriteLine(car1.Print());    
             Console.WriteLine(car2.Print());    
             Console.WriteLine(car3.Print());
+
         }
     }
 }
