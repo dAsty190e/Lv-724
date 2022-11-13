@@ -20,7 +20,9 @@ namespace Task_4_Console
 
             Console.WriteLine(car1.Print());    
             Console.WriteLine(car2.Print());    
-            Console.WriteLine(car3.Print());
+            Console.WriteLine(car3);
+
+
 
         }
     }

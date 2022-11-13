@@ -42,5 +42,9 @@
 
             return car1._name != car2._name || car1._price != car2._price;
         }
+        public override string ToString()
+        {
+            return Print();
+        }
     }
 }
