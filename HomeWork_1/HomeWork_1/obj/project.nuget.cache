@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "72t15g8jtTiw1Ly0DYWEK2Z3G7whqkx19UJEOKNlVLvymkEohX84FnF+nWOr6JxsB7CP6qF/noExxGIqzT+BNQ==",
+  "dgSpecHash": "/3AOuccZfiZzl+LRxzmFPBmhSdbj8GxZlc1MH1NTjb/lmmHsCSJ2fuWgk5h7wl9OCwTIjJhqXQi2i9jHE+V6pQ==",
   "success": true,
-  "projectFilePath": "/Users/mac/Desktop/C# Marathon SoftServe/Lesson_1/HomeWork_1/HomeWork_1/HomeWork_1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mlesy\\temp\\Lv-724\\HomeWork_1\\HomeWork_1\\HomeWork_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mlesy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512",
+    "C:\\Users\\mlesy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\mlesy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\mlesy\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

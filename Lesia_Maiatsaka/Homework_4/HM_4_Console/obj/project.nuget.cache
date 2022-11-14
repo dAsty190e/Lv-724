@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tFZ6hQLV0d3G6ituG4pCtofub/lU+LkWt+HAjUuGLbpWNs5D/M5uGmr821Uf7bymy//RUXuVj975NBpK1QJlTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mlesy\\temp\\Lv-724\\Lesia_Maiatsaka\\Homework_4\\HM_4_Console\\HM_4_Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mlesy\\.nuget\\packages\\namegenerator\\2.0.4\\namegenerator.2.0.4.nupkg.sha512",
+    "C:\\Users\\mlesy\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
