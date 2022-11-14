@@ -9,9 +9,9 @@ namespace Task_4_Tests
         public void ChangePrice()
         {
             // assembler
-            var car1 = new Car("Forester", "Blue", 120_000);
-            var car2 = new Car("Impreza", "White", 90_000);
-            var car3 = new Car("Legacy", "Red", 110_000);
+            var car1 = new Car("Forester", CarColors.Black, 120_000);
+            var car2 = new Car("Impreza", CarColors.White, 90_000);
+            var car3 = new Car("Legacy", CarColors.Red, 110_000);
             // act
             var car1Price = car1.ChangePrice(1.1);
             var car2Price = car2.ChangePrice(1.25);
@@ -26,20 +26,20 @@ namespace Task_4_Tests
         public void ChangeColor()
         {
             // assembler
-            var car2 = new Car("Impreza", "White", 90_000);
+            var car2 = new Car("Impreza", CarColors.White, 90_000);
             // act
-            car2.Color = "Blue";
+            car2.Color = CarColors.Blue;
             // assert
-            Assert.AreEqual("Blue", car2.Color);
-            Assert.AreNotEqual("White", car2?.Color);
+            Assert.AreEqual(CarColors.Blue, car2.Color);
+            Assert.AreNotEqual(CarColors.White, car2?.Color);
         }
 
         [TestMethod]
         public void EequalityOperator()
         {
             // assembler
-            var car1 = new Car("Legacy", "Red", 110_000);
-            var car2 = new Car("Legacy", "Red", 110_000);
+            var car1 = new Car("Legacy", CarColors.Red, 110_000);
+            var car2 = new Car("Legacy", CarColors.Red, 110_000);
             // act
             // assert
             Assert.IsTrue(car1 == car2);

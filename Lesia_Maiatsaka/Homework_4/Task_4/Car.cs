@@ -4,7 +4,7 @@
     {
         public const string CompanyName = "Subaru";
         private string _name;
-        private string _color;
+        private CarColors _color;
         private double _price;
 
         public Car()
@@ -12,17 +12,22 @@
 
         }
 
-        public Car(string name, string color, double price)
+        public Car(string name, CarColors color, double price)
         {
             _name = name;
             _color = color;
             _price = price;
         }
 
-        public string Color 
+        public CarColors Color 
         {
             get => _color;
             set => _color = value;
+        }
+
+        public CarColors CarColorChange(string color) 
+        {
+            return _color;
         }
 
         public string Print() => $"This is a {_name}, its color is {_color} and its price is {_price}";
