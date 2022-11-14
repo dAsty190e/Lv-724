@@ -11,16 +11,35 @@ namespace Task_4_Console
             var car3 = new Car("Legacy", CarColors.Red, 110_000);
             var car4 = new Car("Legacy", CarColors.Red, 110_000);
             Console.WriteLine(car3 == car4);
-
-            car1.ChangePrice(1.1);
-            car2.ChangePrice(1.25);
-            car3.ChangePrice(0.9);
-
-            car2.Color = CarColors.Black;
-
-            Console.WriteLine(car1.Print());    
-            Console.WriteLine(car2.Print());    
+           
+            Console.WriteLine(car1.Print());
+            Console.WriteLine(car2.Print());
             Console.WriteLine(car3);
+            Console.WriteLine("Which car would you like? 1, 2, 3");
+            var userCar = Console.ReadKey().Key;
+            Console.WriteLine("What color would you like?");
+            Console.WriteLine(string.Join(", ", Enum.GetNames(typeof(CarColors))));
+            if (userCar == ConsoleKey.D1)
+            {
+                car1.CarColorChange(Console.ReadLine());
+                Console.WriteLine(car1);
+            }
+            else if (userCar == ConsoleKey.D2)
+            {
+                car2.CarColorChange(Console.ReadLine());
+                Console.WriteLine(car2);
+            }
+            else if (userCar == ConsoleKey.D3)
+            {
+                car3.CarColorChange(Console.ReadLine());
+                Console.WriteLine(car3);
+            }
+            else 
+            {
+                car4.CarColorChange(Console.ReadLine());
+                Console.WriteLine(car4);
+            }
+            
 
         }
     }

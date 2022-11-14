@@ -22,7 +22,6 @@
         public CarColors Color 
         {
             get => _color;
-            set => _color = value;
         }
 
         public CarColors CarColorChange(string color) 
@@ -33,6 +32,19 @@
             {
                 _color = newColor;
             }
+
+            var newPrice = _color switch
+            {
+                CarColors.White => ChangePrice(0.1),
+                CarColors.Black => ChangePrice(0.5),
+                CarColors.Red => ChangePrice(1.2),
+                CarColors.Green => ChangePrice(2.3),
+                CarColors.Blue => ChangePrice(0.002),
+                CarColors.Yellow => ChangePrice(0.7),
+                CarColors.Grey => ChangePrice(0.2),
+                _ => throw new NotImplementedException(),
+            };
+
             return _color;
         }
 

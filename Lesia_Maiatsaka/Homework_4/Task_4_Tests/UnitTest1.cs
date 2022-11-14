@@ -23,18 +23,6 @@ namespace Task_4_Tests
         }
 
         [TestMethod]
-        public void ChangeColor()
-        {
-            // assembler
-            var car2 = new Car("Impreza", CarColors.White, 90_000);
-            // act
-            car2.Color = CarColors.Blue;
-            // assert
-            Assert.AreEqual(CarColors.Blue, car2.Color);
-            Assert.AreNotEqual(CarColors.White, car2?.Color);
-        }
-
-        [TestMethod]
         public void EequalityOperator()
         {
             // assembler
