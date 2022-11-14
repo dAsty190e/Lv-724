@@ -27,6 +27,12 @@
 
         public CarColors CarColorChange(string color) 
         {
+            CarColors newColor;
+            var success =  Enum.TryParse(color, out newColor);
+            if (success)
+            {
+                _color = newColor;
+            }
             return _color;
         }
 

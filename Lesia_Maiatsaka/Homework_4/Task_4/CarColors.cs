@@ -14,5 +14,6 @@ namespace Task_4
         Green,
         Blue,
         Yellow,
+        Grey
     }
 }

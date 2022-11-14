@@ -47,6 +47,27 @@ namespace Task_4_Tests
             Assert.IsFalse(car1 == car2);
         }
 
+        [TestMethod]
+        public void ChangeColorEnum()
+        {
+            // assembler
+            var car1 = new Car("Legacy", CarColors.Red, 110_000);
+            // act
+            car1.CarColorChange("Grey");
+            // assert
+            Assert.AreEqual(CarColors.Grey, car1.Color);
+        }
+
+        [TestMethod]
+        public void ChangeColorEnum_Fail()
+        {
+            // assembler
+            var car1 = new Car("Legacy", CarColors.Red, 110_000);
+            // act
+            car1.CarColorChange("Purple");
+            // assert
+            Assert.AreEqual(CarColors.Red, car1.Color);
+        }
     }
 
 }
