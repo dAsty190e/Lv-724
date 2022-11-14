@@ -1,38 +1,71 @@
 ﻿using System;
 
-namespace Homework_1
+namespace HomeWork4.Dima
 {
-    class Program
+    class Person
     {
-        static void Main(string[] args)
+        private string name;
+        public string Name
         {
-            Console.WriteLine("Please, enter the length of a squere side: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            
-            int squere_perimeter = a * 4;
-            int squere_area = a * a;
-
-            Console.WriteLine($"Perimeter of the squere is: {squere_perimeter}");
-            Console.WriteLine("The squere area is: {0}", squere_area);
-
-            Console.WriteLine("What is your name? ");
+            set { name = value; }
+            get { return name; }
+        }
+        private int birthYear;
+        public int BirthYear
+        {
+            set { birthYear = value; }
+            get { return birthYear;  }
+        }
+        public int age;
+        public Person()
+        {
+            name = "Dima";
+            birthYear = 2001;
+        }
+        public Person(string name, int birthYear)
+        {
+            this.name = name;
+            this.birthYear = birthYear;
+        }
+        
+        public static Person Input(int i)
+        {
+            Console.WriteLine($"Enter {i + 1} your name");
             string name = Console.ReadLine();
-
-            Console.WriteLine("How old are you, {0}", name);
-            int age = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine($"{name}, Your age is {age}");
-
-            Console.Write("Enter a radius: ");
-            double radius = Convert.ToDouble(Console.ReadLine());
-
-            const double PI = 3.14;
-            double length = PI * 2 * radius;
-            double area = PI * radius * radius;
-            double volume = 4 / 3 * PI * radius * radius * radius;
-
-            Console.WriteLine($"Circle parameters are:\n\tVolume: {volume}\n\tArea: {area}\n\tLength: {length}");
+            Console.WriteLine($"Enter {i + 1} your year of birth");
+            string birthYear1 = Console.ReadLine();
+            int birthYear = Convert.ToInt32(birthYear1);
+            Person person = new Person(name, birthYear);
+            return person;
+        }
+        public void Age()
+        {
+            var today = DateTime.Today;
+            age = today.Year - birthYear;
+        }
+        public void ChangeName()
+        {
+            if (age < 16)
+            {
+                name = "Very Young";
+            }
+        }
+        public void Output()
+        {
+            Console.WriteLine($"the name is {name} the birth of year is {birthYear}, the age is {age}");
+        }
+       
+        public static bool operator == (Person first, Person second)
+        {
+            return (first.name == second.name);
+        }
+        public static bool operator != (Person first, Person second)
+        {
+            return !(first == second);
+        }
+        public override string ToString()
+        {
+            return $"the name is {name} the birth of year is {birthYear}, the age is {age}";
         }
     }
 }
-
