@@ -1,6 +1,82 @@
 
 ﻿using System;
 
+namespace Sytnyk_Illia_s_Homework_4
+{
+    class Person
+    {
+        private string name;
+        private DateTime birthYear;
+
+        public Person() { }
+        
+        public Person(string name, DateTime birthYear)
+        {
+            this.name = name;
+            this.birthYear = birthYear;
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public DateTime BirthYear
+        {
+            get { return birthYear; }
+            set { birthYear = value; }
+        }
+
+        public int Age()
+        {
+            var today = DateTime.Today;
+            int age = today.Year - birthYear.Year;
+            return age;
+        }
+
+        public void Input()
+        {
+            Console.WriteLine("Enter the name of a person: ");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter the birthday year of a person: ");
+            birthYear = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("------------------------------");
+        }
+
+        public string ChangeName(string new_name)
+        {
+            name = new_name;
+            return name;
+        }
+
+        public override string ToString()
+        {
+            return $"Person name is {name} and birthday year is {birthYear.Year}";
+        }
+
+        public void Output()
+        {
+            Console.WriteLine(ToString());
+        }
+
+        public static bool operator == (Person first, Person second)
+        {
+            return first.name == second.name;
+        }
+
+        public static bool operator !=(Person first, Person second)
+        {
+            return first.name != second.name;
+        }
+    
+    
+    }
+}
+=======
+
+﻿using System;
+
 namespace Lesson4
 {
     class Program
@@ -50,4 +126,5 @@ namespace Lesson4
         }
     }
 }
+
 
