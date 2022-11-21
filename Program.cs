@@ -1,3 +1,4 @@
+
 ﻿using System;
 
 namespace Sytnyk_Illia_s_Homework_4
@@ -68,52 +69,62 @@ namespace Sytnyk_Illia_s_Homework_4
         {
             return first.name != second.name;
         }
+    
+    
     }
-    internal class Program
+}
+=======
+
+﻿using System;
+
+namespace Lesson4
+{
+    class Program
     {
         static void Main(string[] args)
         {
-            Person p_1 = new Person("Illya", new DateTime (2003, 07, 24));
-            Person p_2 = new Person("Volodymyr", new DateTime(1978, 01, 25));
-            Person p_3 = new Person("Petro", new DateTime(1965, 09, 26));
-            Person p_4 = new Person("Valeriy", new DateTime(1973, 07, 08));
-            Person p_5 = new Person("Olena", new DateTime(1978, 02, 06));
-            Person p_6 = new Person("Yulia", new DateTime(1960, 11, 27));
+            Person person = new Person();
+            person.Output();
 
-            Person[] people = { p_1, p_2, p_3, p_4, p_5, p_6 };
-            Console.WriteLine("------------------------------");
-
-            for (int i = 0; i < people.Length; i++)
+            Person person2 = new Person("fjkvfdv", 2002);
+            person2.Output();
+            Person[] persons = new Person[6];
+            persons[0] = person;
+            persons[1] = person2;
+            for (int i = 2; i < persons.Length; i++)
             {
-                Console.WriteLine($"Person {i+1} is {people[i].Age()} years old");
+                persons[i] = Person.Input(i);
             }
-
-            for(int i = 0; i < people.Length; i++)
+            for (int i = 0; i < persons.Length; i++)
             {
-                if (people[i].Age() < 16)
+                persons[i].Age();
+                persons[i].Output();
+            }
+            string newName = "Very Young";
+            for (int i = 0; i < persons.Length; i++)
+            {
+                if (persons[i].age < 16)
                 {
-                    people[i].ChangeName("Very Young");
+                    persons[i].Name = newName;
+                    Console.WriteLine($"people number {i + 1} has new name - {newName}");
                 }
             }
-            Console.WriteLine("------------------------------");
-
-            for (int i = 0; i < people.Length; i++)
+            for (int i = 0; i < persons.Length; i++)
             {
-                people[i].Output();
-            }
-            Console.WriteLine("------------------------------");
-
-            for (int i = 0; i < people.Length; i++)
-            {
-                for (int j = i+1; j < people.Length; j++)
+                for (int j = i + 1; j < persons.Length; j++)
                 {
-                    if(people[i] == people[j])
+                    if (persons[i] == persons[j])
                     {
-                        Console.WriteLine($"Names of {i+1} person and {j+1} person are the same");
+                        Console.WriteLine($"people number {i + 1} and {j + 1}  have the same name");
                     }
                 }
             }
-            Console.ReadKey();
+            for (int i = 0; i < persons.Length; i++)
+            {
+                Console.WriteLine(persons[i].ToString());
+            }
         }
     }
 }
+
+
