@@ -3,7 +3,7 @@ using Homework_6;
 namespace Lesson_6.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class Hw_MathTests
     {
         [TestMethod]
         public void TestMethod1()
