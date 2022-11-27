@@ -49,5 +49,33 @@ namespace Lesson_6.Test
             Assert.ThrowsException<Exception>(() => readNumbers.ReadNumber(50));
             // assert
         }
+
+        [TestMethod]
+        public void ReadNumbers_Success_Complete()
+        {
+            // assemble
+            var readNumbers = new ReadNumbers(10, 100);
+            // act
+            // assert
+            Assert.AreEqual(true, readNumbers.Complete(100));
+        }
+
+        [TestMethod]
+        public void ReadNumbers_Success_ValidNumbers()
+        {
+            // assemble
+            var numbers = new List<int> { 15, 20, 35, 45, 55 };
+            var readNumbers = new ReadNumbers(10, 100);
+            // act
+            foreach (var item in numbers)
+            {
+                readNumbers.ReadNumber(item);
+            }
+            // assert
+            foreach (var item in numbers)
+            {
+                Assert.IsTrue(readNumbers.ValidNumbers.Contains(item));
+            }
+        }
     }
 }
