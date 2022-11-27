@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_6", "Homework_6\Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_6.Console", "Homework_6.Console\Homework_6.Console.csproj", "{D1A80C28-D244-46DB-9BD6-DB2EF0C40BB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_6_Readnumbers.CLI", "Homework_6_Readnumbers.CLI\Homework_6_Readnumbers.CLI.csproj", "{DC313CF9-3C65-42BC-BD25-E0CCAFE7E147}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D1A80C28-D244-46DB-9BD6-DB2EF0C40BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1A80C28-D244-46DB-9BD6-DB2EF0C40BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1A80C28-D244-46DB-9BD6-DB2EF0C40BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC313CF9-3C65-42BC-BD25-E0CCAFE7E147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC313CF9-3C65-42BC-BD25-E0CCAFE7E147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC313CF9-3C65-42BC-BD25-E0CCAFE7E147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC313CF9-3C65-42BC-BD25-E0CCAFE7E147}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
