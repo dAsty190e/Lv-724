@@ -1,95 +1,45 @@
 ﻿using System;
-using System.Reflection.Emit;
-using System.Threading;
 
-namespace DudnykHW5
+namespace HM5
 {
-    internal class Program
+    class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            // Task 1, 2
-            int firstVal, secondVal;
-
-            Begining:
-            try 
-            { 
-                Console.Write("Enter first number: ");
-                firstVal = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter second number: ");
-                secondVal = Convert.ToInt32(Console.ReadLine());
-                if (secondVal == 0) 
-                    throw new DivideByZeroException();
-            }
-            catch (DivideByZeroException ex)
+            Programmer programmer1 = new Programmer("Go");
+            Programmer[] programmers = new Programmer[6];
+            programmers[0] = programmer1;
+            for (int i = 1; i < programmers.Length; i++)
             {
-                Console.WriteLine(ex.Message);
-                goto Begining;
+                programmers[i] = Programmer.Input(i);
             }
-            catch (FormatException ex)
+            for (int i = 0; i < programmers.Length; i++)
             {
-                Console.WriteLine(ex.Message);
-                goto Begining;
+                programmers[i].Create();
+                programmers[i].Destroy();
             }
-
-
-            Console.WriteLine(Div(firstVal, secondVal));
-
-
-        // Task 3
-            label2: 
-            int start, end;
-            Console.Write("Enter start number: ");
-            start = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter end number: ");
-            end = Convert.ToInt32(Console.ReadLine());
-
-            try
+            Array.Sort(programmers);
+            foreach (Programmer i in programmers)
             {
-                int[] array = ReadNumber(start, end);
+                Console.WriteLine(i.Tool);
             }
-            catch (Exception ex)
+            Builder builder = new Builder("hammer");
+            Builder[] builders = new Builder[6];
+            builders[0] = builder;
+            for (int i = 1; i < programmers.Length; i++)
             {
-                Console.WriteLine(ex.Message);
-                goto label2;
+                builders[i] = Builder.Input(i);
             }
-
-            Console.WriteLine("All good");
-          
-        }
-
-        static double Div(int firstVal, int secondVal)
-        {
-            return (double) firstVal / secondVal;
-        }
-
-        static int[] ReadNumber (int start, int end)
-        {
-            int arrSize = end - start;
-            if (arrSize < 10)
-                throw new Exception ("There is no room for 10 integer numbers to be in range");
-
-            int[] array = new int [arrSize];
-
-            for (int i = 0; i < arrSize; i++)
-            {                
-                Console.Write($"Enter the {i} integer: ");
-                array[i] = Convert.ToInt32(Console.ReadLine());
-
-                if (array[i] < start || array[i] > end)
-                {
-                    throw new Exception("Out of bounds, try again");
-                }
-
-                if ((i > 0) && (array[i] < array[i - 1]))
-                {
-                    throw new Exception("This number is smaller than previous, must be bigger");
-                }
-
+            for (int i = 0; i < builders.Length; i++)
+            {
+                builders[i].Create();
+                builders[i].Destroy();
             }
-
-            return array;
-            
+            Array.Sort(builders);
+            foreach (Builder i in builders)
+            {
+                Console.WriteLine(i.Tool);
+            }
         }
     }
 }
