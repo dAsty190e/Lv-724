@@ -1,71 +1,46 @@
 ﻿using System;
-namespace Lesson4
+namespace Polymorphism
 {
-    public class Person
-    {      
-            private string name;
-            public string Name
-            {
-                set { name = value; }
-                get { return name; }
-            }
-            private int birthYear;
-            public int BirthYear
-            {
-                set { birthYear = value; }
-                get { return birthYear; }
-            }
-            public int age;
-            public Person()
-            {
-                name = "Vlad";
-                birthYear = 2007;
-            }
-            public Person(string name, int birthYear)
-            {
-                this.name = name;
-                this.birthYear = birthYear;
-            }
+    public abstract class Person : IComparable
+    {
+        protected string fullName;
 
-            public static Person Input(int i)
+        public virtual string Name
+        {
+            get
             {
-                Console.WriteLine($"Enter {i + 1} your name");
-                string name = Console.ReadLine();
-                Console.WriteLine($"Enter {i + 1} your year of birth");
-                string birthYear1 = Console.ReadLine();
-                int birthYear = Convert.ToInt32(birthYear1);
-                Person person = new Person(name, birthYear);
-                return person;
+                return fullName;
             }
-            public void Age()
+            set
             {
-                var today = DateTime.Today;
-                age = today.Year - birthYear;
-            }
-            public void ChangeName()
-            {
-                if (age < 16)
-                {
-                    name = "Very Young";
-                }
-            }
-            public void Output()
-            {
-                Console.WriteLine($"the name is {name} the birth of year is {birthYear}, the age is {age}");
-                Console.WriteLine("________________");
-            }
-
-            public static bool operator == (Person first, Person second)
-            {
-                return (first.name == second.name);
-            }
-            public static bool operator !=(Person first, Person second)
-            {
-                return !(first == second);
-            }
-            public override string ToString()
-            {
-                return $"the name is {name} the birth of year is {birthYear}, the age is {age}";
+                fullName = value;
             }
         }
+        public Person(string name)
+        {
+            this.fullName = name;
+        }
+
+        public virtual void Display()
+        {
+            Console.WriteLine("Name: {0}", fullName);
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj != null)
+            {
+                Person p = obj as Person;
+                if (p != null)
+                {
+                    return this.fullName.CompareTo(p.fullName);
+                }
+                else
+                    throw new ArgumentException("The object is not a \"Person\"");
+            }
+            else
+                return 1;
+        }
+    }
 }
+

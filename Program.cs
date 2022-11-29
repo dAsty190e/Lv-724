@@ -1,95 +1,120 @@
 ﻿using System;
-using System.Reflection.Emit;
-using System.Threading;
+using System.Collections.Generic;
+using System.IO;
 
-namespace DudnykHW5
+namespace Polymorphism
 {
-    internal class Program
+    class Program
     {
         static void Main()
         {
-            // Task 1, 2
-            int firstVal, secondVal;
+            string devPath = @"/Users/aleksandr/Desktop/SoftServe/28.12.22/Polymorphism/Devs.txt";
+            List<Person> people = new List<Person>();
 
-            Begining:
-            try 
-            { 
-                Console.Write("Enter first number: ");
-                firstVal = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter second number: ");
-                secondVal = Convert.ToInt32(Console.ReadLine());
-                if (secondVal == 0) 
-                    throw new DivideByZeroException();
-            }
-            catch (DivideByZeroException ex)
+            StreamReader sr = new StreamReader(devPath);
+            while (!sr.EndOfStream)
             {
-                Console.WriteLine(ex.Message);
-                goto Begining;
+                string tempName;
+                int tempSalary;
+                string tempLevel;
+
+                tempName = sr.ReadLine();
+                tempSalary = Convert.ToInt32(sr.ReadLine());
+                tempLevel = sr.ReadLine();
+
+                people.Add(new Developer(tempName, tempSalary, tempLevel));
             }
-            catch (FormatException ex)
+
+            sr.Close();
+
+            people.Add(new Teacher("Zavushchak Iryna", 5000, "C# and OOP"));
+            people.Add(new Teacher("Alibaba", 300, "Biology"));
+            people.Add(new Teacher("Enstein Albert", 10000, "Physics"));
+
+            people.Sort();
+            DisplayPersons();
+
+
+            List<Staff> employees = new List<Staff>();
+
+            foreach (Staff employee in people)
             {
-                Console.WriteLine(ex.Message);
-                goto Begining;
+                employees.Add(employee);
             }
 
+            DisplayStaff();
+            employees.Sort();
+            DisplayStaff();
 
-            Console.WriteLine(Div(firstVal, secondVal));
+            Console.WriteLine("Enter persons name to find (don't forget to prefix name with a \"Teacher\" if a person is a teacher): ");
+            string searchedName = Console.ReadLine();
 
-
-        // Task 3
-            label2: 
-            int start, end;
-            Console.Write("Enter start number: ");
-            start = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter end number: ");
-            end = Convert.ToInt32(Console.ReadLine());
-
-            try
+            bool flag = false;
+            foreach(var person in employees)
             {
-                int[] array = ReadNumber(start, end);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                goto label2;
-            }
-
-            Console.WriteLine("All good");
-          
-        }
-
-        static double Div(int firstVal, int secondVal)
-        {
-            return (double) firstVal / secondVal;
-        }
-
-        static int[] ReadNumber (int start, int end)
-        {
-            int arrSize = end - start;
-            if (arrSize < 10)
-                throw new Exception ("There is no room for 10 integer numbers to be in range");
-
-            int[] array = new int [arrSize];
-
-            for (int i = 0; i < arrSize; i++)
-            {                
-                Console.Write($"Enter the {i} integer: ");
-                array[i] = Convert.ToInt32(Console.ReadLine());
-
-                if (array[i] < start || array[i] > end)
+                if (person.Name == searchedName)
                 {
-                    throw new Exception("Out of bounds, try again");
+                    Console.WriteLine("Ther person you've looked for: ");
+                    person.Display();
+                    flag = true;
+                    break;
                 }
-
-                if ((i > 0) && (array[i] < array[i - 1]))
-                {
-                    throw new Exception("This number is smaller than previous, must be bigger");
-                }
-
             }
 
-            return array;
-            
+            if (!flag)
+                Console.WriteLine("Person not found");
+
+            string staffPath = @"/Users/aleksandr/Desktop/SoftServe/28.12.22/Polymorphism/Staff.txt";
+            StreamWriter sw = new StreamWriter(staffPath);
+
+            foreach (var worker in employees)
+            {
+                Developer p = worker as Developer;
+                Teacher t = worker as Teacher;
+                if (p != null)
+                {
+                    sw.WriteLine(p.Name);
+                    sw.WriteLine("Salary: {0:C}", p.Salary);
+                    sw.WriteLine($"Level: {p.Level}");
+                    sw.WriteLine("--------------");
+                }
+                if (t!= null)
+                {
+                    sw.WriteLine(t.Name);
+                    sw.WriteLine("Salary: {0:C}", t.Salary);
+                    sw.WriteLine($"Subject: {t.Subject}");
+                    sw.WriteLine("--------------");
+                }
+            }
+            sw.Close();
+
+
+
+            Console.ReadKey();
+
+
+            // Functions
+            void DisplayPersons()
+            {
+                foreach (var man in people)
+                {
+                    man.Display();
+                    Console.WriteLine();
+                }
+                Console.WriteLine("===================");
+            }
+
+            void DisplayStaff()
+            {
+                foreach (var man in employees)
+                {
+                    man.Display();
+                    Console.WriteLine();
+                }
+                Console.WriteLine("===================");
+            }
         }
+        
     }
 }
+
