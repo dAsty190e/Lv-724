@@ -1,95 +1,96 @@
 ﻿using System;
-using System.Reflection.Emit;
-using System.Threading;
+using System.Collections.Generic;
 
-namespace DudnykHW5
+namespace Homework8
 {
-    internal class Program
+    class Program
     {
         static void Main()
         {
-            // Task 1, 2
-            int firstVal, secondVal;
-
-            Begining:
-            try 
-            { 
-                Console.Write("Enter first number: ");
-                firstVal = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter second number: ");
-                secondVal = Convert.ToInt32(Console.ReadLine());
-                if (secondVal == 0) 
-                    throw new DivideByZeroException();
-            }
-            catch (DivideByZeroException ex)
-            {
-                Console.WriteLine(ex.Message);
-                goto Begining;
-            }
-            catch (FormatException ex)
-            {
-                Console.WriteLine(ex.Message);
-                goto Begining;
-            }
-
-
-            Console.WriteLine(Div(firstVal, secondVal));
-
-
-        // Task 3
-            label2: 
-            int start, end;
-            Console.Write("Enter start number: ");
-            start = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter end number: ");
-            end = Convert.ToInt32(Console.ReadLine());
-
+            string userInput;
+            List<Shape> shapes = new List<Shape>();
+        a:
             try
             {
-                int[] array = ReadNumber(start, end);
+                do
+                {
+                    Console.WriteLine("==================================");
+                    Console.WriteLine("To add circle, type in \"circle\"");
+                    Console.WriteLine("To add squere, type in \"squere\"");
+                    Console.WriteLine("Type in sort to sort the list");
+                    Console.WriteLine("Type in quit to end program");
+                    Console.WriteLine("Type display, to display all shapes");
+                    Console.WriteLine("==================================\n");
+                    userInput = Console.ReadLine().ToLower();
+
+                    switch (userInput)
+                    {
+                        case "circle":
+                            Circle(ref shapes);
+                            break;
+
+                        case "squere":
+                            Square(ref shapes);
+                            break;
+
+                        case "sort":
+                            shapes.Sort();
+                            break;
+
+                        case "display":
+                            Display(ref shapes);
+                            break;
+
+                        case "quit":
+                            Console.WriteLine("Bye!");
+                            break;
+
+                        default:
+                            Console.WriteLine("No such figure");
+                            break;
+                    }
+                }
+                while (userInput != "quit");
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                goto label2;
-            }
-
-            Console.WriteLine("All good");
-          
-        }
-
-        static double Div(int firstVal, int secondVal)
-        {
-            return (double) firstVal / secondVal;
-        }
-
-        static int[] ReadNumber (int start, int end)
-        {
-            int arrSize = end - start;
-            if (arrSize < 10)
-                throw new Exception ("There is no room for 10 integer numbers to be in range");
-
-            int[] array = new int [arrSize];
-
-            for (int i = 0; i < arrSize; i++)
-            {                
-                Console.Write($"Enter the {i} integer: ");
-                array[i] = Convert.ToInt32(Console.ReadLine());
-
-                if (array[i] < start || array[i] > end)
-                {
-                    throw new Exception("Out of bounds, try again");
-                }
-
-                if ((i > 0) && (array[i] < array[i - 1]))
-                {
-                    throw new Exception("This number is smaller than previous, must be bigger");
-                }
+                goto a;
 
             }
-
-            return array;
             
+            
+        }
+
+        // Helper functions
+        static void Circle(ref List<Shape> shapes)
+        {
+            Console.WriteLine("Enter name and radius seperated by space: ");
+            string[] temp = Console.ReadLine().Split(' ');
+            string name = temp[0];
+            decimal radius = Convert.ToDecimal(temp[1]);
+            shapes.Add(new Circle(name, radius));
+        }
+
+        static void Square(ref List<Shape> shapes)
+        {
+            Console.WriteLine("Enter name and side length seperated by space: ");
+            string[] temp = Console.ReadLine().Split(' ');
+            string name = temp[0];
+            decimal side = Convert.ToDecimal(temp[1]);
+            shapes.Add(new Square(name, side));
+        }
+
+        static void Display(ref List<Shape> shapes)
+        {
+            if (shapes.Count > 0)
+            {
+                foreach (var shape in shapes)
+                    Console.WriteLine(shape);
+            }
+            else
+                Console.WriteLine("List is empty");
         }
     }
 }
+
