@@ -1,0 +1,56 @@
+Teacher Alibaba
+Salary: $300.00
+Subject: Biology
+--------------
+Programmer Vynnichuk Bogdan
+Salary: $1,000.00
+Level: Intern
+--------------
+Programmer Zoroarkultra Roman
+Salary: $2,000.00
+Level: Junior
+--------------
+Programmer Cherniak Stanislav
+Salary: $3,000.00
+Level: Intern
+--------------
+Programmer Gomziack Dmytro
+Salary: $3,000.00
+Level: Junior
+--------------
+Programmer Ostapchuk Andriy
+Salary: $3,400.00
+Level: Senior
+--------------
+Programmer Illia Sytnyk
+Salary: $3,500.00
+Level: Middle
+--------------
+Programmer Vladyslav Fedus
+Salary: $3,500.00
+Level: Junior
+--------------
+Programmer Maiatska Lesia
+Salary: $4,000.00
+Level: Middle
+--------------
+Programmer Dudnyk Oleksandr
+Salary: $5,000.00
+Level: Senior
+--------------
+Teacher Zavushchak Iryna
+Salary: $5,000.00
+Subject: C# and OOP
+--------------
+Programmer Ostrynskyi Vladyslav
+Salary: $6,000.00
+Level: Senior
+--------------
+Teacher Enstein Albert
+Salary: $10,000.00
+Subject: Physics
+--------------
+Programmer Victor Seletskyi
+Salary: $10,000.00
+Level: Senior
+--------------
