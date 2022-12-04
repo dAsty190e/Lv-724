@@ -1,53 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace HM5
+
+namespace Homework5
 {
-    class Programmer : IDeveloper, IComparable
+    public class Programmer : IDeveloper
     {
-        string language;
-        public string Tool
+        public string _language;
+        public string Tool { get { return _language; } set { _language = value; } }
+        public int CompareTo(IDeveloper? other)
         {
-            set { language = value; }
-            get { return language; }
-        }
-
-        public Programmer(string language)
-        {
-            this.language = language;
-        }
-        public static Programmer Input(int i)
-        {
-            Console.WriteLine($"{i + 1} enter your language");
-            string language = Console.ReadLine();
-            Programmer programmer1 = new Programmer(language);
-            return programmer1;
-
-        }
-        public void Create()
-        {
-            Console.WriteLine($"The language is {this.language}");
-        }
-        public void Destroy()
-        {
-            if (language != "c#")
+            if (other == null) return 1;
             {
-                Console.WriteLine("your language isn't c# ");
-            }
-            else
-            {
-                Console.WriteLine("your language is c#");
+                return Tool.CompareTo(other.Tool);
             }
         }
-        public Programmer() { }
-        public int CompareTo(object o)
+
+        public string Create()
         {
-            Programmer p = o as Programmer;
-            if (p != null)
-                return this.Tool.CompareTo(p.Tool);
-            else
-                throw new ArgumentException("Object is not a developer");
+            return $"Create programer {_language}";
+        }
+
+        public string Destroy()
+        {
+            return $"Destroy programer";
         }
     }
 }
