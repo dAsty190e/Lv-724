@@ -1,28 +1,54 @@
+
 ﻿using System;
-namespace Homework5
+using System.Collections.Generic;
+using System.Text;
+
+namespace HM5
 {
-    public class Builder
-    { 
-        private string _tool;
-
-        public string Tool { get { return _tool; } set { _tool = value; } }
-
-        public int CompareTo(IDeveloper? other)
+    class Builder : IDeveloper, IComparable
+    {
+        string tool;
+        public string Tool
         {
-            if (other == null) return 1;
-            return Tool.CompareTo(other.Tool);
+            set { tool = value; }
+            get { return tool; }
         }
 
-        public string Create()
+        public Builder(string tool)
         {
-            return $"Builder create {_tool}";
+            this.tool = tool;
         }
-
-        public string Destroy()
+        public static Builder Input(int i)
         {
-            return "Builder destroy";
+            Console.WriteLine($"{i + 1} enter your tool");
+            string tool = Console.ReadLine();
+            Builder builder = new Builder(tool);
+            return builder;
+        }
+        public void Create()
+        {
+            Console.WriteLine($"The tool is {this.tool}");
+        }
+        public void Destroy()
+        {
+            if (tool != "hammer")
+            {
+                Console.WriteLine("your language isn't c# ");
+            }
+            else
+            {
+                Console.WriteLine("youк tool isn't hammer");
+            }
+        }
+        public Builder() { }
+        public int CompareTo(object o)
+        {
+            Builder b = o as Builder;
+            if (b != null)
+                return this.Tool.CompareTo(b.Tool);
+            else
+                throw new ArgumentException("Object is not a developer");
         }
     }
 }
-
 
