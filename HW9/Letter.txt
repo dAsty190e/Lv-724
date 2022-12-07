@@ -1,0 +1,15 @@
+Shape: LapTop
+Area: 169
+Perimeter: 52
+Shape: IPad
+Area: 100
+Perimeter: 40
+Shape: Table
+Area: 2500
+Perimeter: 200
+Shape: Plate
+Area: 314.15926535897900
+Length: 62.83185307179580
+Shape: Halo
+Area: 254.46900494077299
+Length: 56.54866776461622
