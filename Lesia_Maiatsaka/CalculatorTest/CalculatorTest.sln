@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTest", "CalculatorTest\CalculatorTest.csproj", "{D488A2F3-1D1E-4F58-9631-D5A1215BC09F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "CalculatorTest\Test.csproj", "{D488A2F3-1D1E-4F58-9631-D5A1215BC09F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{2DB152D1-DAE8-456B-B86D-E7E5DC4D88E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{2DB152D1-DAE8-456B-B86D-E7E5DC4D88E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointAndTriangle", "PointAndTriangle\PointAndTriangle.csproj", "{24DBBEE5-47D1-4410-A9AB-6A09F5A9344F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2DB152D1-DAE8-456B-B86D-E7E5DC4D88E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DB152D1-DAE8-456B-B86D-E7E5DC4D88E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DB152D1-DAE8-456B-B86D-E7E5DC4D88E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DBBEE5-47D1-4410-A9AB-6A09F5A9344F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DBBEE5-47D1-4410-A9AB-6A09F5A9344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DBBEE5-47D1-4410-A9AB-6A09F5A9344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DBBEE5-47D1-4410-A9AB-6A09F5A9344F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

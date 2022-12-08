@@ -12,8 +12,8 @@ namespace Homework_8
             _name = name;
         }
 
-        public abstract void Area();
-        public abstract void Perimeter();
+        public abstract double Area();
+        public abstract decimal Perimeter();
 
         public decimal Perimeter1 { get; set; }
         public double Area1 { get; set; }
