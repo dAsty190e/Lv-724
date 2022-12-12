@@ -1,0 +1,5 @@
+- The Some Circle has size: 5 and area: 78.53981633974483 and perimeter: 31.4159265358979
+- The Another Square has size: 5 and area: 25 and perimeter: 20
+- The Big Square has size: 14 and area: 196 and perimeter: 56
+- The Some Square has size: 2 and area: 4 and perimeter: 8
+- The Another Square has size: 5 and area: 25 and perimeter: 20
